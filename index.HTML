@@ -1,0 +1,29 @@
+<!-- Credit to Bytive on Youtube for helping connecting HTML with Python -->
+<html>
+  <head>
+   <meta name ="viewport" content="width=device-width, initial-scale = 1.0">
+   <link rel="stylesheet" type="text/css" href = "../static/index.css">
+ 
+  </head>
+  <body>
+
+     <form class = "grid" action = "/result" method = "POST">
+        <center>
+          {% if name %}
+          <h3 style = "color: blue;"> {{name}}. </h3>
+          {% endif %}
+        </center>
+        <label for = "Name">Enter your ID :</label>
+        <input type ="text" name = "name" id = "name">
+        <center><input type = "Submit" class = "file_submit"></center>
+
+
+
+
+     </form>
+
+
+  </body> 
+
+
+</html>
